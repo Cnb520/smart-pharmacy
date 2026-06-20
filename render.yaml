@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: smart-pharmacy
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: cd server && npm install && npm start
+    plan: free
