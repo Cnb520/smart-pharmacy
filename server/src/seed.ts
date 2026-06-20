@@ -10,19 +10,14 @@ function json(arr: string[]): string {
   return JSON.stringify(arr);
 }
 
-console.log('开始种子数据导入...');
+// 检查是否已有数据，避免重复导入
+const count = db.prepare('SELECT COUNT(*) as cnt FROM drugs').get() as { cnt: number } | undefined;
+if (count && count.cnt > 0) {
+  console.log('数据库已有数据，跳过种子导入。');
+  process.exit(0);
+}
 
-// 清空所有表
-db.exec(`
-  DELETE FROM browse_history;
-  DELETE FROM favorite_items;
-  DELETE FROM favorite_folders;
-  DELETE FROM comments;
-  DELETE FROM articles;
-  DELETE FROM drugs;
-  DELETE FROM drug_categories;
-  DELETE FROM users;
-`);
+console.log('开始种子数据导入...');
 
 // ====== 插入分类 ======
 const categories = [
