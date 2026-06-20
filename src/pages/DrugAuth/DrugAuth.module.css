@@ -1,0 +1,82 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--color-surface-bg);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 48px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.backBtn {
+  color: #1E293B;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1E293B;
+  margin-right: 24px;
+}
+
+.placeholder {
+  width: 24px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card:active {
+  background: #f5f5f5;
+}
+
+.iconBox {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1E293B;
+}
+
+.desc {
+  font-size: 13px;
+  color: #94A3B8;
+}

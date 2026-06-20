@@ -1,0 +1,231 @@
+.page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+/* ========== 顶部导航 ========== */
+.header {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 8px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.headerTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #1a73e8;
+}
+
+/* ========== 收藏夹列表 ========== */
+.list {
+  padding: 12px;
+}
+
+.cardWrapper {
+  margin-bottom: 8px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.cardCount {
+  font-size: 13px;
+  color: #999;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.arrow {
+  color: #ccc;
+}
+
+/* ========== 删除确认 ========== */
+.deleteConfirm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #fff5f5;
+  border-top: 1px solid #ffebeb;
+  border-radius: 0 0 10px 10px;
+  font-size: 13px;
+  color: #e53935;
+}
+
+.confirmBtn {
+  padding: 4px 12px;
+  border-radius: 12px;
+  border: none;
+  background: #e53935;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  padding: 4px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ========== 空状态 ========== */
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  color: #999;
+}
+
+.emptyBtn {
+  margin-top: 12px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: 1px solid #1a73e8;
+  background: #fff;
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ========== 新建弹窗 ========== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+}
+
+.dialogTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.dialogInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.dialogInput:focus {
+  border-color: #1a73e8;
+}
+
+.dialogInput::placeholder {
+  color: #ccc;
+}
+
+.dialogActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dialogCancel {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dialogConfirm {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}

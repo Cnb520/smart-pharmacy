@@ -1,0 +1,575 @@
+.page {
+  min-height: 100%;
+  background: #f5f5f5;
+}
+
+/* ========== 品牌区（未登录） ========== */
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+}
+
+.logoIcon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.brandName {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a73e8;
+  margin: 0 0 8px;
+}
+
+.brandSlogan {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+/* ========== 登录引导卡片 ========== */
+.loginCard {
+  margin: 0 20px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.loginCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.loginCardDesc {
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.loginButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.phoneLoginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  background: linear-gradient(135deg, #1a73e8, #1557b0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wechatLoginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  background: linear-gradient(135deg, #07c160, #06ad56);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ========== 隐私协议 ========== */
+.privacySection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.privacyLink {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.privacyDivider {
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* ========== 用户信息区 ========== */
+.userHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 20px 28px;
+  background: linear-gradient(135deg, #1a73e8, #1557b0);
+  color: #fff;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.avatarPlaceholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nickname {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.phone {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ========== 功能菜单列表 ========== */
+.menuList {
+  margin: 12px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem:active {
+  background: #f8f8f8;
+}
+
+.menuLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuIcon {
+  color: #666;
+}
+
+.menuLabel {
+  font-size: 15px;
+  color: #333;
+}
+
+.menuRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menuCount {
+  font-size: 13px;
+  color: #999;
+}
+
+.menuArrow {
+  color: #ccc;
+}
+
+/* ========== 退出登录 ========== */
+.logoutSection {
+  padding: 24px 20px;
+}
+
+.logoutBtn {
+  width: 100%;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #999;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* ========== 退出确认弹窗 ========== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+}
+
+.dialogTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.dialogDesc {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.dialogActions {
+  display: flex;
+  gap: 12px;
+}
+
+.dialogCancel {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dialogConfirm {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ========== 微信扫码登录弹窗 ========== */
+.qrDialog {
+  background: #fff;
+  border-radius: 16px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.qrHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.qrHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qrHeaderTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.qrClose {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #f5f5f5;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.qrClose:hover {
+  background: #e5e5e5;
+}
+
+.qrBody {
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qrCodeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: opacity 0.3s;
+}
+
+.qrExpired {
+  opacity: 0.8;
+}
+
+.qrScanned {
+  opacity: 1;
+}
+
+.qrSvg {
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qrHint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #999;
+}
+
+.qrHintIcon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.qrRefreshBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 24px;
+  border: 1px solid #07c160;
+  border-radius: 20px;
+  background: #fff;
+  color: #07c160;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.qrRefreshBtn:hover {
+  background: #f0fdf4;
+}
+
+.qrSimulateBtn {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #07c160, #06ad56);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(7, 193, 96, 0.3);
+}
+
+.qrSimulateBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(7, 193, 96, 0.4);
+}
+
+.qrSimulateBtn:active {
+  transform: translateY(0);
+}
+
+/* ========== 编辑资料 ========== */
+.userHeader {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.userHeader:active {
+  opacity: 0.9;
+}
+
+.avatarEditBadge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+
+.editIcon {
+  margin-left: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  vertical-align: middle;
+}
+
+.editDialog {
+  background: #fff;
+  border-radius: 16px;
+  width: 320px;
+  padding: 24px 20px 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.editDialogTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.editAvatarSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.editAvatarPreview {
+  flex-shrink: 0;
+}
+
+.editAvatarImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+}
+
+.editAvatarPlaceholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.editAvatarInput {
+  flex: 1;
+}
+
+.editField {
+  margin-bottom: 20px;
+}
+
+.editLabel {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.editInput {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.editInput:focus {
+  border-color: #1a73e8;
+}
+
+.editInput::placeholder {
+  color: #ccc;
+}
+
+.editActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.editCancel {
+  flex: 1;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.editCancel:hover {
+  background: #f5f5f5;
+}
+
+.editSave {
+  flex: 1;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(135deg, #1a73e8, #1557b0);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.editSave:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

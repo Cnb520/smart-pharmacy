@@ -1,0 +1,30 @@
+.container {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  padding: 4px 0;
+}
+
+.letter {
+  font-size: 11px;
+  padding: 2px 8px;
+  cursor: pointer;
+  color: #666;
+  user-select: none;
+  line-height: 1.6;
+}
+
+.letter:hover {
+  color: #333;
+}
+
+.active {
+  color: #1677ff;
+  font-weight: 700;
+}
